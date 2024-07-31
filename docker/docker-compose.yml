@@ -1,5 +1,5 @@
 services:
-  common:
+  gateway:
     image: sevenhallo-gateway:latest
     container_name: gateway
     command: start-dev
@@ -9,7 +9,7 @@ services:
       - sevenhallo
 
 volumes:
-  product-service:
+  gateway:
 
 networks:
   sevenhallo:
